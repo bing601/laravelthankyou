@@ -22,4 +22,7 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 });
+Route::post('/contact', function () {
+    echo "hello";
+});
 
