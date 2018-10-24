@@ -5,15 +5,15 @@
         <div class="card-title"><h1>Contact</h1>
             <p class="lead">Please use this form to contact the site owner</p></div>
         <div class="card-body">
-            <form role="form" id="contact-form" class="contact-form" action="/contact"  method="post">
+            <form role="form" id="contact-form" class="contact-form" action="{{route('contact.store')}}"  method="post">
                 @csrf
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name">
+                    <input type="text" class="form-control" id="name" name="name">
                 </div>
                 <div class="form-group">
                     <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
                 </div>
 
                 <div class="form-group">
